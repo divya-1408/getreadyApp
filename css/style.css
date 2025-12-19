@@ -1,0 +1,491 @@
+.panda-slider-box{
+    background-color: #00000015;
+    margin: auto
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    color: #363958;
+}
+section{
+    margin: 40px 0;
+}
+.slider-header h1{
+    color: #fcc560 ;
+    font-size: 60px; 
+    font-weight: bold;
+    font-family: arial;
+}
+.slider-header span{
+    color: #363958;
+    display: block;
+}
+.penguin-logo{
+    width: 200px;
+}
+.dropdown-menu-own{
+    height: 60vh;
+}
+.penguin-search{
+    width: 80%;
+}
+.slider-img img{
+    height: 450px;
+}
+/* ============================= */
+/* NAVBAR EXPANDED PANEL STYLE   */
+/* ============================= */
+
+.navbar-collapse {
+    transition: all 0.4s ease;
+}
+
+/* When navbar opens (mobile & desktop) */
+.navbar-collapse.show {
+    background: #ffffff;
+    border-radius: 16px;
+    margin-top: 12px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    animation: navFadeSlide 0.35s ease;
+}
+
+/* Dropdown panel style */
+.navbar .dropdown-menu {
+    border-radius: 14px;
+    padding: 12px 0;
+    border: none;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    animation: dropFade 0.25s ease;
+}
+
+/* Dropdown items */
+.navbar .dropdown-item {
+    padding: 10px 22px;
+    font-size: 14px;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+.navbar .dropdown-item:hover {
+    background: #f6f6f6;
+    padding-left: 28px;
+}
+
+/* Search bar when expanded */
+.navbar-collapse.show .penguin-search {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+/* Animations */
+@keyframes navFadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dropFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.happy-customers {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #fff6e5, #fff);
+}
+
+.happy-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.happy-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.happy-header p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.happy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.happy-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.happy-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.happy-card h3 {
+    font-size: 48px;
+    color: #f9a825;
+}
+
+.happy-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+/* Avatars */
+.customer-avatars {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-avatars img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-left: -15px;
+}
+
+.customer-avatars span {
+    margin-left: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Scroll Animation */
+.happy-card {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.happy-card.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+
+.trust-section {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+}
+
+.trust-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+    background: #fafafa;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.trust-box i {
+    font-size: 40px;
+    color: #f9a825;
+    margin-bottom: 15px;
+}
+
+.trust-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.brand-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.brand-slider {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    animation: slideBrands 18s linear infinite;
+}
+
+.brand-slider img {
+    width: 75%;
+    height: 400px;
+    opacity: 0.7;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.brand-slider img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes slideBrands {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.offer-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg,#ff9800,#ff5722);
+    color: #fff;
+}
+
+.offer-box {
+    text-align: center;
+}
+
+.offer-box h2 {
+    font-size: 42px;
+}
+
+.offer-box span {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.offer-box button {
+    margin-top: 20px;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #ff5722;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Shopping Cart started */
+.card-img{
+    width: 90%;
+    margin: auto;
+    background: rgb(230, 221, 221);
+    border-radius: 10px;
+    border: none;
+}
+.buy-now{
+    align-items: center;
+}
+h1.buy-now{
+    color: orange;
+}
+h2.buy-now{
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.card-img img{
+    width: 60%;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+
+}
+.shopping-cart{
+    margin:40px 0;
+}
+.contact-section{
+    margin: 150px 0;
+}
+.contact-box{
+    width: 100%;
+    border-radius: 10px;;
+}
+.contact-box img{
+    width: 30%;
+    padding: 20px;
+}
+.shop-box{
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Footer section */
+.footer{
+    background-color: #232F3E;
+    overflow: hidden;
+
+}
+.back-top{
+    background: #232f3ed0;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    padding: 10px 0;
+}
+.back-top a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+footer h4{
+    color: white;
+}
+footer ul{
+    padding: 0;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #ddd;
+}
+.footer-box{
+    padding: 40px 0;
+    margin: 0 10%;
+   
+}
+
+.faq-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.faq-item h4 {
+    margin-bottom: 8px;
+}
+
+.newsletter {
+    padding: 70px 20px;
+    text-align: center;
+    background: #fff6e5;
+}
+
+.newsletter-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.newsletter-box input {
+    padding: 14px;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    width: 260px;
+}
+
+.newsletter-box button {
+    padding: 14px 25px;
+    border-radius: 0 30px 30px 0;
+    background: #f9a825;
+    border: none;
+    color: #fff;
+}
+
+
+/* Responsive */
+
+@media (max-width:991px){
+    .hide-nav{
+        display: none;
+    }
+    .penguin-search{
+        width: 100%;
+    }
+}
+@media (max-width:767px){
+    .hide-nav{
+        display: none;
+    }
+    .penguin-search{
+        width: 100%;
+    }
+}
+
+.contact-box {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.contact-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.contact-box img {
+    transition: transform 0.4s ease;
+}
+
+.contact-box:hover img {
+    transform: scale(1.1) rotate(2deg);
+}
+.img-details h3 {
+    color: #363958;
+    font-weight: bold;
+}
+
+/* Fade base state */
+.fade-left,
+.fade-right {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 0.9s ease;
+}
+
+.fade-left {
+    transform: translateX(-80px);
+}
+
+.fade-right {
+    transform: translateX(80px);
+}
+
+.fade-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.delay-2 {
+    transition-delay: 0.4s;
+}
+.delay-3 {
+    transition-delay: 0.6s;
+}
